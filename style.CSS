@@ -7,7 +7,9 @@
 	font-family: "Jovanny Lemonad - Bender"; /* 自定义字体名称 */
 	src: url("Jovanny Lemonad - Bender.otf"); /* 字体文件路径 */
 }
-
+.my-element {
+  cursor: "mouse.cur", auto;
+}
       body{
         display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -36,7 +38,7 @@
     grid-row: 3 / 3;
     overflow: hidden; /* 隐藏溢出部分 */
     overflow-y: scroll; /* 显示垂直滚动条 */
-    max-height: 500px; /* 设置最大高度，超过这个高度将显示滚动条 */
+    max-height: 540px; /* 设置最大高度，超过这个高度将显示滚动条 */
     background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.3s ease;
 }

@@ -38,7 +38,7 @@
   transition: background-color 0.3s ease;
   overflow: hidden; /* 隐藏溢出部分 */
   overflow-y: scroll; /* 显示垂直滚动条 */
-  max-height: 1000px; /* 设置最大高度，超过这个高度将显示滚动条 */
+  max-height: 1060px; /* 设置最大高度，超过这个高度将显示滚动条 */
 }
 
 .box1:hover {
