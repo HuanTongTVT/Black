@@ -22,13 +22,21 @@
         z-index: 1;
       } 
       .box0 {
-    grid-column: 1 / 6;
-    grid-row: 2 / 2;
-}
+        grid-column: 1 / 6;
+        grid-row: 2 / 2;
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 0.3s ease;
+    }
+    .box0:hover {
+      background-color: rgb(255, 255, 255);
+    }
 
 .box1 {
     grid-column: 1 / 5;
     grid-row: 3 / 3;
+    overflow: hidden; /* 隐藏溢出部分 */
+    overflow-y: scroll; /* 显示垂直滚动条 */
+    max-height: 500px; /* 设置最大高度，超过这个高度将显示滚动条 */
     background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.3s ease;
 }
@@ -42,6 +50,49 @@
     grid-column: 1 / 6;
     grid-row: 4 / 4;
 }
+.box3 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+.box4 {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+.box5 {
+  grid-column: 3 / 3;
+  grid-row: 1 / 1;
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+.box6 {
+  grid-column: 4 / 4;
+  grid-row: 1 / 1;
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+.box7 {
+  grid-column: 5 / 5;
+  grid-row: 1 / 1;
+  background-color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+.box8 {
+  grid-column: 5 / 6;
+  grid-row: 3 / 3;
+  opacity: 0; 
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.box8:hover {
+  opacity: 1; 
+  background-color: rgb(255, 255, 255);
+}
+
 .top {
   margin: 0;
         padding: 0;
@@ -69,6 +120,19 @@
       font-size: 20px;
               margin: 0;
         padding: 0;
+        -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    }
+    .mid-text {
+      color: #888;
+      font-family: "Jovanny Lemonad - Bender";
+      font-size: 20px;
+              margin: 0;
+        padding: 0;
+        justify-content: center; /* 在主轴上居中 */
+  align-items: center;
         -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
