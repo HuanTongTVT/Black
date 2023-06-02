@@ -1,0 +1,160 @@
+@font-face {
+	font-family: "C64_Pro-STYLE"; /* 自定义字体名称 */
+	src: url("C64_Pro-STYLE.otf"); /* 字体文件路径 */
+
+  }
+  @font-face {
+	font-family: "Jovanny Lemonad - Bender"; /* 自定义字体名称 */
+	src: url("Jovanny Lemonad - Bender.otf"); /* 字体文件路径 */
+}
+
+      body{
+        display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 30% 10% 50% 10%;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-y: hidden;
+        letter-spacing: 0;
+        z-index: 1;
+      } 
+      .box0 {
+    grid-column: 1 / 6;
+    grid-row: 2 / 2;
+}
+
+.box1 {
+    grid-column: 1 / 5;
+    grid-row: 3 / 3;
+    background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.box1:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.box2 {
+    grid-column: 1 / 6;
+    grid-row: 4 / 4;
+}
+.top {
+  margin: 0;
+        padding: 0;
+      color: #888;
+      font-family: "Jovanny Lemonad - Bender";
+      font-size: 72px;
+      -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    }
+    .top-text {
+      color: #888;
+      font-family: "Jovanny Lemonad - Bender";
+      font-size: 20px;
+      -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    }
+
+     .gray-text {
+      color: #888;
+      font-family: "Jovanny Lemonad - Bender";
+      font-size: 20px;
+              margin: 0;
+        padding: 0;
+        -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    }
+
+    .black-text {
+      color: #ffffff;
+      font-family: "Jovanny Lemonad - Bender";
+      font-size: 12px;
+      margin: 0;
+        padding: 0;
+        -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+  opacity: 1; /* 默认的不透明度 */
+  transition: opacity 0.3s ease; /* 添加过渡效果以平滑改变透明度 */
+}
+
+.black-text:hover {
+  opacity: 0.5; /* 悬浮时的透明度 */
+}
+
+
+      .column {
+      /* background-color: #000000; */
+      border: 0px solid #ccc;
+      padding: 00px;
+      -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    }
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: black;
+        overflow-y: hidden;
+        letter-spacing: 0;
+        z-index: -2;
+        -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+      }
+      #text {
+        overflow-y: hidden;
+        -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+      }
+      #ascii-art {
+        position: fixed;
+        overflow-y: hidden;
+        bottom: 0;
+        right: 0;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1px;
+        line-height: 8px;
+        color: white;
+        overflow: auto;
+        white-space: pre;
+        letter-spacing: 1px;
+        z-index: -1;
+        -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+      }
+      pre {
+        overflow-y: hidden;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 4px;
+        line-height: 8px;
+        letter-spacing: 1px; /* 设置字符间距为 0 */
+        -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+      }
+      ::-webkit-scrollbar{
+        display: none;
+      }
