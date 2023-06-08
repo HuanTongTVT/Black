@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>关注公众号《大迁世界》</title>
+  <title>关注公众号《JavaScript 每日一练》</title>
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="container">
+  <div class="center">
+    <h1 class="el-st">ALL BLACK<br><span id="clock"></span></h1>
+    <span class="scroll">Click to visit</span>
+  </div>
+</div>
+
+<script>
+  // 更新时间的函数
+  function updateClock() {
+    // 获取当前时间
+    var now = new Date();
+
+    // 获取小时、分钟和秒数
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+
+    // 格式化时间为字符串
+    var timeString =
+      addLeadingZero(hours) +
+      ':' +
+      addLeadingZero(minutes) +
+      ':' +
+      addLeadingZero(seconds);
+
+    // 获取显示时间的元素
+    var clockElement = document.getElementById('clock');
+
+    // 更新时间文本
+    clockElement.textContent = timeString;
+  }
+
+  // 在一位数字前添加前导零
+  function addLeadingZero(number) {
+    return number < 10 ? '0' + number : number;
+  }
+
+  // 每秒更新一次时间
+  setInterval(updateClock, 1000);
+
+</script>
+
+</body>
+</html>
