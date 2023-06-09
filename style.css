@@ -160,7 +160,19 @@
   opacity: 1; /* 默认的不透明度 */
   transition: opacity 0.3s ease; /* 添加过渡效果以平滑改变透明度 */
 }
-
+.black-texta {
+  color: #ffffff;
+  font-family: "Jovanny Lemonad - Bender";
+  font-size: 12px;
+  margin: 0;
+    padding: 0;
+    -webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none;
+opacity: 1; /* 默认的不透明度 */
+transition: opacity 0.3s ease; /* 添加过渡效果以平滑改变透明度 */
+}
 .black-text:hover {
         color: #ffffff;
   opacity: 0.5; /* 悬浮时的透明度 */
@@ -409,4 +421,7 @@
         .box9.hidden {
           opacity: 0;
           z-index: -100;
+        }
+        a {
+          color: white;
         }
